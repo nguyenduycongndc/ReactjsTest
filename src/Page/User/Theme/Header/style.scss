@@ -1,0 +1,20 @@
+@use 'sass:map';
+@import '/src/Style/Page/theme.scss';
+
+.header_top{
+    background-color: #f5f5f5;
+}
+.header_top_right{
+    display: flex;
+    justify-content: end;
+    ul{
+        display: flex;
+        column-gap: 10px;
+        list-style: none;
+        a{
+            font-size: 14px;
+            display: inline-block;
+            color: map.get($theme-color,'main');
+        }
+    }
+}
